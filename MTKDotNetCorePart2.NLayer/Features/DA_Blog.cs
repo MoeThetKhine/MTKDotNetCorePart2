@@ -1,7 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using MTKDotNetCorePart2.NLayer.Database;
-using MTKDotNetCorePart2.NLayer.Model;
-using System.Reflection.Metadata;
+﻿
 
 namespace MTKDotNetCorePart2.NLayer.Features
 {
