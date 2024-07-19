@@ -18,12 +18,14 @@ namespace MTKDotNetCorePart2.HttpClientApi.Controllers
         }
 
         #region Read
+
         [HttpGet]
         public IActionResult Read()
         {
             var lst = _context.Blogs.ToList();
             return Ok(lst);
         }
+
         #endregion
 
         #region Edit
@@ -36,8 +38,10 @@ namespace MTKDotNetCorePart2.HttpClientApi.Controllers
             {
                 return NotFound("No Data Found");
             }
+
             return Ok(item);
         }
+
         #endregion
 
         #region Create
@@ -48,6 +52,7 @@ namespace MTKDotNetCorePart2.HttpClientApi.Controllers
             _context.Blogs.Add(blog);
             var result = _context.SaveChanges();
             string message = result > 0 ? "Creating Successful" : "Creating Fail";
+
             return Ok(message);
         }
 
@@ -69,8 +74,10 @@ namespace MTKDotNetCorePart2.HttpClientApi.Controllers
 
             var result = _context.SaveChanges();
             string message = result > 0 ? "Updating Successful" : "Updating Fail";
+
             return Ok(message);
         }
+
         #endregion
 
         #region Patch
@@ -84,16 +91,24 @@ namespace MTKDotNetCorePart2.HttpClientApi.Controllers
                 return NotFound("No Data Found");
             }
             if (!string.IsNullOrEmpty(blog.BlogTitle))
+            {
                 item.BlogTitle = blog.BlogTitle;
+            }
             if (!string.IsNullOrEmpty(blog.BlogAuthor))
+            {
                 item.BlogAuthor = blog.BlogAuthor;
+            }
             if (!string.IsNullOrEmpty(blog.BlogContent))
+            {
                 item.BlogContent = blog.BlogContent;
+            }
 
             var result = _context.SaveChanges();
             string message = result > 0 ? "Updating Successful" : "Updating Fail";
+
             return Ok(message);
         }
+
         #endregion
 
         #region Delete
@@ -106,11 +121,14 @@ namespace MTKDotNetCorePart2.HttpClientApi.Controllers
             {
                 return NotFound("No Data Found");
             }
+
             _context.Blogs.Remove(item);
             var result = _context.SaveChanges();
             string message = result > 0 ? "Deleting Successful" : "Deleting Fail";
+
             return Ok(message);
         }
+
         #endregion
     }
 }
