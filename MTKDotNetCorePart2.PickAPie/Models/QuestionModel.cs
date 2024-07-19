@@ -1,6 +1,6 @@
 ﻿namespace MTKDotNetCorePart2.PickAPie.Models;
 
-public class Question
+public class QuestionModel
 {
     public int QuestionId { get; set; }
     public string QuestionName { get; set; }

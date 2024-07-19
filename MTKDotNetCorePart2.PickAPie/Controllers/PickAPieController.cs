@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MTKDotNetCorePart2.PickAPie.Models;
 using Newtonsoft.Json;
-
 
 namespace MTKDotNetCorePart2.PickAPie.Controllers;
 
@@ -8,10 +8,10 @@ namespace MTKDotNetCorePart2.PickAPie.Controllers;
 [ApiController]
 public class PickAPieController : ControllerBase
 {
-    private async Task<PickAPie> GetDataAsync()
+    private async Task<PickAPieModel> GetDataAsync()
     {
         string jsonStr = await System.IO.File.ReadAllTextAsync("data.json");
-        var model = JsonConvert.DeserializeObject<PickAPie>(jsonStr);
+        var model = JsonConvert.DeserializeObject<PickAPieModel>(jsonStr);
         return model!;
     }
 
@@ -20,7 +20,6 @@ public class PickAPieController : ControllerBase
     {
         var model = await GetDataAsync();
         return Ok(model.Questions);
-
     }
 
     [HttpGet("Answer{qId}")]
@@ -36,7 +35,9 @@ public class PickAPieController : ControllerBase
     public async Task<IActionResult> Answers(string answerName, int questionId)
     {
         var model = await GetDataAsync();
-        var answer = model.Answers.FirstOrDefault(x => x.AnswerName == answerName && x.QuestionId == questionId);
+        var answer = model.Answers.FirstOrDefault(x =>
+            x.AnswerName == answerName && x.QuestionId == questionId
+        );
 
         return Ok(answer);
     }

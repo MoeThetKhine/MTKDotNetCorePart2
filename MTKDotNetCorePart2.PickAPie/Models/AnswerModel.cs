@@ -1,6 +1,6 @@
 ﻿namespace MTKDotNetCorePart2.PickAPie.Models;
 
-public class Answer
+public class AnswerModel
 {
     public int AnswerId { get; set; }
     public string AnswerImageUrl { get; set; }
