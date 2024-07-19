@@ -1,11 +1,11 @@
-﻿namespace MTKDotNetCorePart2.NLayer.Database
+﻿namespace MTKDotNetCorePart2.NLayer.Database;
+
+public class AppDbContext : DbContext
 {
-    internal class AppDbContext : DbContext
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(ConnectionStrings._sqlConnectionStringBuilder.ConnectionString);
-        }
-        public DbSet<BlogModel> Blogs { get; set; }
+        optionsBuilder.UseSqlServer(ConnectionStrings._sqlConnectionStringBuilder.ConnectionString);
     }
+
+    public DbSet<BlogModel> Blogs { get; set; }
 }
