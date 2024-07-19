@@ -1,6 +1,4 @@
-﻿
-
-namespace MTKDotNetCorePart2.NLayer.Database
+﻿namespace MTKDotNetCorePart2.NLayer.Database
 {
     internal class AppDbContext : DbContext
     {
