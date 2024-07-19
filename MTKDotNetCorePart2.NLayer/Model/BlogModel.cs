@@ -1,6 +1,4 @@
-﻿
-
-namespace MTKDotNetCorePart2.NLayer.Model
+﻿namespace MTKDotNetCorePart2.NLayer.Model
 {
     [Table("Tbl_Blog")]
     public class BlogModel
