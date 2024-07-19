@@ -1,5 +1,4 @@
 ﻿
-
 namespace MTKDotNetCorePart2.NLayer.Features
 {
     [Route("api/[controller]")]
