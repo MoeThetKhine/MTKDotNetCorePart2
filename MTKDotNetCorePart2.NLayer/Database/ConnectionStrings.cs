@@ -1,13 +1,13 @@
-﻿namespace MTKDotNetCorePart2.NLayer.Database
+﻿namespace MTKDotNetCorePart2.NLayer.Database;
+
+public class ConnectionStrings
 {
-    public class ConnectionStrings
-    {
-        public static SqlConnectionStringBuilder _sqlConnectionStringBuilder = new SqlConnectionStringBuilder()
+    public static SqlConnectionStringBuilder _sqlConnectionStringBuilder =
+        new()
         {
-            DataSource = "localhost", // or "(local)" or your server name
+            DataSource = "localhost",
             InitialCatalog = "OJTBatch1",
             IntegratedSecurity = true,
             TrustServerCertificate = true,
         };
-    }
 }
