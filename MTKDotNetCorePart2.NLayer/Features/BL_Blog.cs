@@ -1,4 +1,4 @@
-﻿using MTKDotNetCorePart2.NLayer.Model;
+﻿
 
 namespace MTKDotNetCorePart2.NLayer.Features
 {

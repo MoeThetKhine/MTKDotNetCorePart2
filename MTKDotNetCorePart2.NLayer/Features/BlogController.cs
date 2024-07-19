@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using MTKDotNetCorePart2.NLayer.Model;
+﻿
 
 namespace MTKDotNetCorePart2.NLayer.Features
 {

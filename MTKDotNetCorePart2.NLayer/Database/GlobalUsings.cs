@@ -7,3 +7,7 @@ global using Microsoft.EntityFrameworkCore;
 global using MTKDotNetCorePart2.NLayer.Database;
 global using MTKDotNetCorePart2.NLayer.Model;
 global using System.Reflection.Metadata;
+global using MTKDotNetCorePart2.NLayer.Model;
+global using Microsoft.AspNetCore.Http;
+global using Microsoft.AspNetCore.Mvc;
+global using MTKDotNetCorePart2.NLayer.Model;
