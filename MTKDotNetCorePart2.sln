@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MTKDotNetCore.NLayerExample", "MTKDotNetCore.NLayerExample", "{8DE7CF24-6C1E-4D03-BB3A-36CEAB90D48F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NLayerExample", "NLayerExample", "{8DE7CF24-6C1E-4D03-BB3A-36CEAB90D48F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTKDotNetCorePart2.NLayer", "MTKDotNetCorePart2.NLayer\MTKDotNetCorePart2.NLayer.csproj", "{76694F3F-3927-4FF6-859B-B4DBFB500358}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MTKDotNetCorePart2.BayDin", "MTKDotNetCorePart2.BayDin", "{F1278E93-F75A-4E12-BD2F-D4D55C51F759}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LatHtaukBayDin", "LatHtaukBayDin", "{F1278E93-F75A-4E12-BD2F-D4D55C51F759}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTKDotNetCorePart2.LatHtaukBayDin", "MTKDotNetCorePart2.LatHtaukBayDin\MTKDotNetCorePart2.LatHtaukBayDin.csproj", "{C7563911-5E5F-410F-9A35-36178E93D165}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PickAPie", "PickAPie", "{7133544F-156C-406E-9311-15B07CB30688}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTKDotNetCorePart2.PickAPie", "MTKDotNetCorePart2.PickAPie\MTKDotNetCorePart2.PickAPie.csproj", "{A98392BB-5F10-4C21-904B-FCC3F798E21C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +29,10 @@ Global
 		{C7563911-5E5F-410F-9A35-36178E93D165}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7563911-5E5F-410F-9A35-36178E93D165}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7563911-5E5F-410F-9A35-36178E93D165}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A98392BB-5F10-4C21-904B-FCC3F798E21C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A98392BB-5F10-4C21-904B-FCC3F798E21C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A98392BB-5F10-4C21-904B-FCC3F798E21C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A98392BB-5F10-4C21-904B-FCC3F798E21C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{76694F3F-3927-4FF6-859B-B4DBFB500358} = {8DE7CF24-6C1E-4D03-BB3A-36CEAB90D48F}
 		{C7563911-5E5F-410F-9A35-36178E93D165} = {F1278E93-F75A-4E12-BD2F-D4D55C51F759}
+		{A98392BB-5F10-4C21-904B-FCC3F798E21C} = {7133544F-156C-406E-9311-15B07CB30688}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {710EA6BF-1B7B-4344-990B-19D7DDD6396E}
