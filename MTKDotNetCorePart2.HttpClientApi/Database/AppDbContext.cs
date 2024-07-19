@@ -1,14 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MTKDotNetCorePart2.HttpClientApi.Model;
 
-namespace MTKDotNetCorePart2.HttpClientApi.Database
+namespace MTKDotNetCorePart2.HttpClientApi.Database;
+
+public class AppDbContext : DbContext
 {
-    internal class AppDbContext : DbContext
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(ConnectionStrings._sqlConnectionStringBuilder.ConnectionString);
-        }
-        public DbSet<BlogModel> Blogs { get; set; }
+        optionsBuilder.UseSqlServer(ConnectionStrings._sqlConnectionStringBuilder.ConnectionString);
     }
+
+    public DbSet<BlogModel> Blogs { get; set; }
 }
