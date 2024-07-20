@@ -11,22 +11,25 @@ namespace MTKDotNetCorePart2.MyanmarProverbsApi.Controllers
     {
         private async Task<Tbl_Mmproverbs> GetDataFromApi()
         {
-            HttpClient client = new HttpClient();
+            HttpClient client = new();
             var response = await client.GetAsync("https://raw.githubusercontent.com/sannlynnhtun-coding/Myanmar-Proverbs/main/MyanmarProverbs.json");
             if (response.IsSuccessStatusCode)
             {
                 string jsonStr = await response.Content.ReadAsStringAsync();
                 var model =  JsonConvert.DeserializeObject<Tbl_Mmproverbs>(jsonStr);
-                return model;
+                return model!;
             }
-            return null;
+
+            return null!;
         }
+
         [HttpGet]
         public async Task<IActionResult> Get()
         {
             var model = await GetDataFromApi();
             return Ok(model.Tbl_MMProverbsTitle);
         }
+
         [HttpGet("{titleName}")]
         public async Task<IActionResult>Get(string titleName)
         {
@@ -38,6 +41,7 @@ namespace MTKDotNetCorePart2.MyanmarProverbsApi.Controllers
             }
             var titleId = item.TitleId;
             var lst = model.Tbl_MMProverbs.Where(x => x.TitleId == titleId);
+
             return Ok(lst);
         }
     }
@@ -61,5 +65,4 @@ namespace MTKDotNetCorePart2.MyanmarProverbsApi.Controllers
         public string ProverbName { get; set; }
         public string ProverbDesp { get; set; }
     }
-
 }
