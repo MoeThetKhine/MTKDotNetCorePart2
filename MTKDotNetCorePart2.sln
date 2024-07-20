@@ -17,9 +17,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTKDotNetCorePart2.PickAPie
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HttpClient", "HttpClient", "{D8EF6598-B668-4608-A4D8-DA6FBDB90A2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTKDotNetCorePart2.HttpClientConsoleApp", "MTKDotNetCorePart2.HttpClientConsoleApp\MTKDotNetCorePart2.HttpClientConsoleApp.csproj", "{1C163187-C0FB-4469-BE3D-D1FDE1FF0D08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTKDotNetCorePart2.HttpClientConsoleApp", "MTKDotNetCorePart2.HttpClientConsoleApp\MTKDotNetCorePart2.HttpClientConsoleApp.csproj", "{1C163187-C0FB-4469-BE3D-D1FDE1FF0D08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTKDotNetCorePart2.HttpClientApi", "MTKDotNetCorePart2.HttpClientApi\MTKDotNetCorePart2.HttpClientApi.csproj", "{FC5BF11F-07A2-41E4-B21F-BD0BD93AB8CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTKDotNetCorePart2.HttpClientApi", "MTKDotNetCorePart2.HttpClientApi\MTKDotNetCorePart2.HttpClientApi.csproj", "{FC5BF11F-07A2-41E4-B21F-BD0BD93AB8CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RestClient", "RestClient", "{3A587C86-74DD-4AE1-ACED-21C860731F4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTKDotNetCorePart2.RestClientConsoleApp", "MTKDotNetCorePart2.RestClientConsoleApp\MTKDotNetCorePart2.RestClientConsoleApp.csproj", "{3352005F-25A9-4888-ABD4-FCECA4C995A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTKDotNetCorePart2.RestClientApi", "MTKDotNetCorePart2.RestClientApi\MTKDotNetCorePart2.RestClientApi.csproj", "{3AA814C3-C833-42F4-960A-0840E69F3EF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +53,14 @@ Global
 		{FC5BF11F-07A2-41E4-B21F-BD0BD93AB8CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC5BF11F-07A2-41E4-B21F-BD0BD93AB8CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC5BF11F-07A2-41E4-B21F-BD0BD93AB8CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3352005F-25A9-4888-ABD4-FCECA4C995A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3352005F-25A9-4888-ABD4-FCECA4C995A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3352005F-25A9-4888-ABD4-FCECA4C995A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3352005F-25A9-4888-ABD4-FCECA4C995A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AA814C3-C833-42F4-960A-0840E69F3EF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AA814C3-C833-42F4-960A-0840E69F3EF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AA814C3-C833-42F4-960A-0840E69F3EF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AA814C3-C833-42F4-960A-0840E69F3EF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +71,8 @@ Global
 		{A98392BB-5F10-4C21-904B-FCC3F798E21C} = {7133544F-156C-406E-9311-15B07CB30688}
 		{1C163187-C0FB-4469-BE3D-D1FDE1FF0D08} = {D8EF6598-B668-4608-A4D8-DA6FBDB90A2F}
 		{FC5BF11F-07A2-41E4-B21F-BD0BD93AB8CC} = {D8EF6598-B668-4608-A4D8-DA6FBDB90A2F}
+		{3352005F-25A9-4888-ABD4-FCECA4C995A8} = {3A587C86-74DD-4AE1-ACED-21C860731F4A}
+		{3AA814C3-C833-42F4-960A-0840E69F3EF4} = {3A587C86-74DD-4AE1-ACED-21C860731F4A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {710EA6BF-1B7B-4344-990B-19D7DDD6396E}
