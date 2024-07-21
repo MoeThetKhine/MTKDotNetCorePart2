@@ -32,6 +32,7 @@ namespace MTKDotNetCorePart2.MyanmarProverbsApi.Controllers
             var model = await GetDataFromApi();
             return Ok(model.Tbl_MMProverbsTitle);
         }
+
         [HttpGet("{titleName}")]
         public async Task<IActionResult> Get(string titleName)
         {
