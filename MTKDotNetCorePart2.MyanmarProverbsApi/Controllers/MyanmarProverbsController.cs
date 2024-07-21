@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MySqlX.XDevAPI.Common;
 using Newtonsoft.Json;
 using System.Text.Json.Serialization;
 
@@ -11,15 +12,19 @@ namespace MTKDotNetCorePart2.MyanmarProverbsApi.Controllers
     {
         private async Task<Tbl_Mmproverbs> GetDataFromApi()
         {
-            HttpClient client = new HttpClient();
-            var response = await client.GetAsync("https://raw.githubusercontent.com/sannlynnhtun-coding/Myanmar-Proverbs/main/MyanmarProverbs.json");
-            if (response.IsSuccessStatusCode)
-            {
-                string jsonStr = await response.Content.ReadAsStringAsync();
-                var model =  JsonConvert.DeserializeObject<Tbl_Mmproverbs>(jsonStr);
-                return model;
-            }
-            return null;
+            //HttpClient client = new HttpClient();
+            //var response = await client.GetAsync("https://raw.githubusercontent.com/sannlynnhtun-coding/Myanmar-Proverbs/main/MyanmarProverbs.json");
+            //if (response.IsSuccessStatusCode)
+            //{
+            //    string jsonStr = await response.Content.ReadAsStringAsync();
+            //    var model =  JsonConvert.DeserializeObject<Tbl_Mmproverbs>(jsonStr);
+            //    return model;
+            //}
+            //return null;
+
+            var jsonStr = await System.IO.File.ReadAllTextAsync("data.json");
+            var model = JsonConvert.DeserializeObject<Tbl_Mmproverbs>(jsonStr);
+            return model;
         }
         [HttpGet]
         public async Task<IActionResult> Get()
@@ -28,17 +33,33 @@ namespace MTKDotNetCorePart2.MyanmarProverbsApi.Controllers
             return Ok(model.Tbl_MMProverbsTitle);
         }
         [HttpGet("{titleName}")]
-        public async Task<IActionResult>Get(string titleName)
+        public async Task<IActionResult> Get(string titleName)
         {
             var model = await GetDataFromApi();
-            var item = model.Tbl_MMProverbsTitle.FirstOrDefault(x=>x.TitleName == titleName);
+            var item = model.Tbl_MMProverbsTitle.FirstOrDefault(x => x.TitleName == titleName);
             if (item == null)
             {
                 return NotFound();
             }
             var titleId = item.TitleId;
-            var lst = model.Tbl_MMProverbs.Where(x => x.TitleId == titleId);
+            var result = model.Tbl_MMProverbs.Where(x => x.TitleId == titleId);
+
+            List<Tbl_MmproverbsHead> lst = result.Select(x => new Tbl_MmproverbsHead
+            {
+                ProverbId = x.ProverbId,
+                ProverbName = x.ProverbName,
+                TitleId = x.TitleId,
+            }).ToList();
+
             return Ok(lst);
+        }
+        [HttpGet("{titleId}/{proverbId}")]
+        public async Task<IActionResult> Get(int titleId,int proverbId)
+        {
+            var model = await GetDataFromApi();
+            var item = model.Tbl_MMProverbs.FirstOrDefault(x => x.TitleId ==titleId && x.ProverbId == proverbId);
+
+            return Ok(item);
         }
     }
 
@@ -60,6 +81,13 @@ namespace MTKDotNetCorePart2.MyanmarProverbsApi.Controllers
         public int ProverbId { get; set; }
         public string ProverbName { get; set; }
         public string ProverbDesp { get; set; }
+    }
+    public class Tbl_MmproverbsHead
+    {
+        public int TitleId { get; set; }
+        public int ProverbId { get; set; }
+        public string ProverbName { get; set; }
+      
     }
 
 }
