@@ -29,7 +29,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTKDotNetCorePart2.RestClie
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyanmarProverbs", "MyanmarProverbs", "{2862C2BB-5EC3-4526-8F07-C070FAA0095C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTKDotNetCorePart2.MyanmarProverbsApi", "MTKDotNetCorePart2.MyanmarProverbsApi\MTKDotNetCorePart2.MyanmarProverbsApi.csproj", "{C2D8B784-521E-4ACB-B4A3-B358638C0242}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTKDotNetCorePart2.MyanmarProverbsApi", "MTKDotNetCorePart2.MyanmarProverbsApi\MTKDotNetCorePart2.MyanmarProverbsApi.csproj", "{C2D8B784-521E-4ACB-B4A3-B358638C0242}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PizzaApi", "PizzaApi", "{7D608AA8-5FD4-48AC-89FD-67AD708E58F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTKDotNetCorePart2.PizzaApi", "MTKDotNetCorePart2.PizzaApi\MTKDotNetCorePart2.PizzaApi.csproj", "{CE852031-697B-45C9-BAB3-9ED00B8D2C81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PizzaApiDapperService", "PizzaApiDapperService", "{FE2FCB94-7729-4E4E-A6F0-E0FE20AEAE29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTKDotNetCorePart2.PizzaApiDapperService", "MTKDotNetCorePart2.PizzaApiDapperService\MTKDotNetCorePart2.PizzaApiDapperService.csproj", "{83750912-DE88-45B5-8B0D-2BA64E2B51B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +77,14 @@ Global
 		{C2D8B784-521E-4ACB-B4A3-B358638C0242}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2D8B784-521E-4ACB-B4A3-B358638C0242}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2D8B784-521E-4ACB-B4A3-B358638C0242}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE852031-697B-45C9-BAB3-9ED00B8D2C81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE852031-697B-45C9-BAB3-9ED00B8D2C81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE852031-697B-45C9-BAB3-9ED00B8D2C81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE852031-697B-45C9-BAB3-9ED00B8D2C81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83750912-DE88-45B5-8B0D-2BA64E2B51B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83750912-DE88-45B5-8B0D-2BA64E2B51B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83750912-DE88-45B5-8B0D-2BA64E2B51B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83750912-DE88-45B5-8B0D-2BA64E2B51B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,6 +98,8 @@ Global
 		{3352005F-25A9-4888-ABD4-FCECA4C995A8} = {3A587C86-74DD-4AE1-ACED-21C860731F4A}
 		{3AA814C3-C833-42F4-960A-0840E69F3EF4} = {3A587C86-74DD-4AE1-ACED-21C860731F4A}
 		{C2D8B784-521E-4ACB-B4A3-B358638C0242} = {2862C2BB-5EC3-4526-8F07-C070FAA0095C}
+		{CE852031-697B-45C9-BAB3-9ED00B8D2C81} = {7D608AA8-5FD4-48AC-89FD-67AD708E58F5}
+		{83750912-DE88-45B5-8B0D-2BA64E2B51B2} = {FE2FCB94-7729-4E4E-A6F0-E0FE20AEAE29}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {710EA6BF-1B7B-4344-990B-19D7DDD6396E}
