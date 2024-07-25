@@ -46,6 +46,7 @@ namespace MTKDotNetCorePart2.ConsoleAppRefitExample
 
         #endregion
 
+        #region EditAsync
 
         private async Task EditAsync(int id)
         {
@@ -58,12 +59,17 @@ namespace MTKDotNetCorePart2.ConsoleAppRefitExample
                 Console.WriteLine($"Content =>{item.BlogContent}");
                 Console.WriteLine("_____________________________________");
             }
-            catch(ApiException ex)
+            catch (ApiException ex)
             {
                 Console.WriteLine(ex.StatusCode.ToString());
                 Console.WriteLine(ex.Content);
             }
         }
+
+        #endregion
+
+
+
         private async Task CreateAsync(string title, string author, string content)
         {
             BlogModel blog = new BlogModel()
