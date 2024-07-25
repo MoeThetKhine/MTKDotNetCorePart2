@@ -13,6 +13,8 @@ namespace MTKDotNetCorePart2.ConsoleAppRefitExample
     {
         private readonly IBlogApi _service = RestService.For<IBlogApi>("https://localhost:7188");
 
+        #region RunAsync
+
         public async Task RunAsync()
         {
             //await ReadAsync();
@@ -22,8 +24,10 @@ namespace MTKDotNetCorePart2.ConsoleAppRefitExample
             //await UpdateAsync(2, "stringtitleedit", "stringauthoredit", "stringcontentedit");
             //await UpdateAsync(90, "stringtitleedit", "stringauthoredit", "stringcontentedit");
             await DeleteAsync(25);
-
         }
+
+        #endregion
+
         private async Task ReadAsync()
         {
             var lst = await _service.GetBlogs();
