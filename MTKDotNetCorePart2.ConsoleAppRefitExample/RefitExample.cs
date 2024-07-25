@@ -102,6 +102,7 @@ namespace MTKDotNetCorePart2.ConsoleAppRefitExample
 
         #endregion
 
+        #region DeleteAsync
 
         private async Task DeleteAsync(int id)
         {
@@ -114,6 +115,11 @@ namespace MTKDotNetCorePart2.ConsoleAppRefitExample
             var message = await _service.DeleteBlog(id);
             Console.WriteLine(message);
         }
+
+        #endregion
+
+
+
 
     }
 }
