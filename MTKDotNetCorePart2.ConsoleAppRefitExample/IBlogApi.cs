@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 namespace MTKDotNetCorePart2.ConsoleAppRefitExample
 {
 
+    #region IBlogApi
+
     public interface IBlogApi
     {
         [Get("/api/blog")]
@@ -26,6 +28,11 @@ namespace MTKDotNetCorePart2.ConsoleAppRefitExample
         Task<string> DeleteBlog(int id);
     }
 
+    #endregion
+
+
+    #region BlogModel
+
     public class BlogModel
     {
         public int BlogId { get; set; }
@@ -33,5 +40,10 @@ namespace MTKDotNetCorePart2.ConsoleAppRefitExample
         public string? BlogAuthor { get; set; }
         public string? BlogContent { get; set; }
     }
+
+    #endregion
+
+
+
 
 }
