@@ -28,6 +28,8 @@ namespace MTKDotNetCorePart2.ConsoleAppRefitExample
 
         #endregion
 
+        #region ReadAync
+
         private async Task ReadAsync()
         {
             var lst = await _service.GetBlogs();
@@ -41,6 +43,10 @@ namespace MTKDotNetCorePart2.ConsoleAppRefitExample
                 Console.WriteLine("_____________________________________");
             }
         }
+
+        #endregion
+
+
         private async Task EditAsync(int id)
         {
             try
