@@ -119,7 +119,5 @@ namespace MTKDotNetCorePart2.ConsoleAppRefitExample
         #endregion
 
 
-
-
     }
 }
