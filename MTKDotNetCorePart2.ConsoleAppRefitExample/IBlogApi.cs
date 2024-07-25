@@ -30,7 +30,6 @@ namespace MTKDotNetCorePart2.ConsoleAppRefitExample
 
     #endregion
 
-
     #region BlogModel
 
     public class BlogModel
