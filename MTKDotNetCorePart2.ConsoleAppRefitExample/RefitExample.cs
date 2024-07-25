@@ -85,9 +85,9 @@ namespace MTKDotNetCorePart2.ConsoleAppRefitExample
 
         #endregion
 
+        #region UpdateAsync
 
-
-        private async Task UpdateAsync(int id, string tilte,string author,string content)
+        private async Task UpdateAsync(int id, string tilte, string author, string content)
         {
             BlogModel blog = new BlogModel()
             {
@@ -99,6 +99,10 @@ namespace MTKDotNetCorePart2.ConsoleAppRefitExample
             var message = await _service.UpdateBlog(id, blog);
             Console.WriteLine(message);
         }
+
+        #endregion
+
+
         private async Task DeleteAsync(int id)
         {
 
