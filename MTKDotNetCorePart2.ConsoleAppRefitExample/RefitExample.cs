@@ -68,7 +68,7 @@ namespace MTKDotNetCorePart2.ConsoleAppRefitExample
 
         #endregion
 
-
+        #region CreateAsync
 
         private async Task CreateAsync(string title, string author, string content)
         {
@@ -82,6 +82,11 @@ namespace MTKDotNetCorePart2.ConsoleAppRefitExample
             var message = await _service.CreateBlog(blog);
             Console.WriteLine(message);
         }
+
+        #endregion
+
+
+
         private async Task UpdateAsync(int id, string tilte,string author,string content)
         {
             BlogModel blog = new BlogModel()
