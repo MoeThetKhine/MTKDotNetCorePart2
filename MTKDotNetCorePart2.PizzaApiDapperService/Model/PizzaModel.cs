@@ -8,10 +8,10 @@ namespace MTKDotNetCorePart2.PizzaApiDapperService.Model
         {
             [Key]
             [Column("PizzaId")]
-            public int Id { get; set; }
+            public int PizzaId { get; set; }
 
             [Column("Pizza")]
-            public string Name {  get; set; }
+            public string Pizza {  get; set; }
 
             [Column("Price")]
             public decimal Price {  get; set; }
