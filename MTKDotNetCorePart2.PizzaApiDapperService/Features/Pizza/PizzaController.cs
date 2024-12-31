@@ -1,14 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using MTKDotNetCorePart2.PizzaApiDapperService.Database;
-using MTKDotNetCorePart2.PizzaApiDapperService.Model;
-using MTKDotNetCorePart2.PizzaApiDapperService.Query;
-using MTKDotNetCorePart2.PizzaApiDapperService.Shared;
-
-using System.Linq;
-
-namespace MTKDotNetCorePart2.PizzaApiDapperService.Features.Pizza
+﻿namespace MTKDotNetCorePart2.PizzaApiDapperService.Features.Pizza
 {
     [Route("api/[controller]")]
     [ApiController]
