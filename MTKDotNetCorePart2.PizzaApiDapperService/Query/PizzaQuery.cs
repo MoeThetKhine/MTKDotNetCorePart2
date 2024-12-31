@@ -12,9 +12,13 @@ public class PizzaQuery
 
     #endregion
 
+    #region PizzaOrderDetailQuery
+
     public static string PizzaOrderDetailQuery { get; } =
         @"select pod.*, pe.PizzaExtraName, pe.Price from [dbo].[Tbl_PizzaOrderDetail] pod
             inner join Tbl_PizzaExtra pe on pod.PizzaExtraId = pe.PizzaExtraId
             where PizzaOrderInvoiceNo = @PizzaOrderInvoiceNo;";
+
+    #endregion
 
 }
