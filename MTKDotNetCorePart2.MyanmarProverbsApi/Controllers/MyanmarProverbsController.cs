@@ -36,6 +36,8 @@ public class MyanmarProverbsController : ControllerBase
 
     #endregion
 
+    #region Get
+
     [HttpGet("{titleName}")]
     public async Task<IActionResult> Get(string titleName)
     {
@@ -57,6 +59,9 @@ public class MyanmarProverbsController : ControllerBase
 
         return Ok(lst);
     }
+
+    #endregion
+
     [HttpGet("{titleId}/{proverbId}")]
     public async Task<IActionResult> Get(int titleId,int proverbId)
     {
