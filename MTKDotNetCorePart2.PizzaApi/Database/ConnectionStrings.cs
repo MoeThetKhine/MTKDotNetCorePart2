@@ -1,6 +1,4 @@
-﻿using System.Data.SqlClient;
-
-namespace MTKDotNetCorePart2.PizzaApi.Database
+﻿namespace MTKDotNetCorePart2.PizzaApi.Database
 {
     public class ConnectionStrings
     {
