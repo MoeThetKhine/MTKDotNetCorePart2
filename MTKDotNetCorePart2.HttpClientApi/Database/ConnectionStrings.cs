@@ -1,6 +1,4 @@
-﻿using System.Data.SqlClient;
-
-namespace MTKDotNetCorePart2.HttpClientApi.Database
+﻿namespace MTKDotNetCorePart2.HttpClientApi.Database
 {
     public class ConnectionStrings
     {
