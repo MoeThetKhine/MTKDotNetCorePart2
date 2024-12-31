@@ -1,8 +1,4 @@
-﻿using System.Data;
-using System.Data.SqlClient;
-using Dapper;
-
-namespace MTKDotNetCorePart2.WindowFormsApp.Shared;
+﻿namespace MTKDotNetCorePart2.WindowFormsApp.Shared;
 
 public class DapperService
 {
