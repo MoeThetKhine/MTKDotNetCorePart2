@@ -108,6 +108,8 @@ public class HttpClientExample
 
     #endregion
 
+    #region UpdateAsync
+
     private async Task UpdateAsync(int id, string title,string author,string content)
     {
         BlogDto blogDto = new BlogDto()
@@ -127,6 +129,8 @@ public class HttpClientExample
             Console.WriteLine(message);
         }
     }
+
+    #endregion
 }
-   
+
 
