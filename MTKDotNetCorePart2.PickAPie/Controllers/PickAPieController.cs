@@ -1,8 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using MTKDotNetCorePart2.PickAPie.Models;
-using Newtonsoft.Json;
-
-namespace MTKDotNetCorePart2.PickAPie.Controllers;
+﻿namespace MTKDotNetCorePart2.PickAPie.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
