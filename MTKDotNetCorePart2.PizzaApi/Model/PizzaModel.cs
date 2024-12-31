@@ -1,5 +1,7 @@
 ﻿namespace MTKDotNetCorePart2.PizzaApi.Model;
 
+#region PizzaModel
+
 [Table("Tbl_Pizza")]
 public class PizzaModel
 {
@@ -13,3 +15,5 @@ public class PizzaModel
     [Column("Price")]
     public decimal Price {  get; set; }
  }
+
+#endregion
