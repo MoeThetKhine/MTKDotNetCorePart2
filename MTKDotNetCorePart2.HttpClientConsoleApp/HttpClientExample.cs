@@ -43,6 +43,7 @@ public class HttpClientExample
 
     #endregion
 
+    #region EditAsync
 
     private async Task EditAsync(int id)
     {
@@ -63,6 +64,9 @@ public class HttpClientExample
             Console.WriteLine(message);
         }
     }
+
+    #endregion
+
     private async Task DeleteAsync(int id)
     {
         var response = await _client.DeleteAsync($"{_blogEndpoint}/{id}");
