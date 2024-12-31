@@ -1,8 +1,7 @@
-﻿namespace MTKDotNetCorePart2.PizzaApiDapperService.Model
+﻿namespace MTKDotNetCorePart2.PizzaApiDapperService.Model;
+
+public class OrderResquestModel
 {
-    public class OrderResquestModel
-    {
-        public int PizzaId { get; set; }
-        public int[] Extras { get; set; }
-    }
+    public int PizzaId { get; set; }
+    public int[] Extras { get; set; }
 }
