@@ -1,5 +1,7 @@
 ﻿namespace MTKDotNetCorePart2.RestClientConsoleApp;
 
+#region BlogDto
+
 public class BlogDto
 {
     public long BlogId { get; set; }
@@ -8,3 +10,5 @@ public class BlogDto
     public string BlogContent { get; set; }
     public bool IsActive { get; set; }
 }
+
+#endregion
