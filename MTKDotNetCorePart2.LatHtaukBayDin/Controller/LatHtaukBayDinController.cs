@@ -34,6 +34,8 @@ public class LatHtaukBayDinController : ControllerBase
 
     #endregion
 
+    #region NumberList
+
     [HttpGet("{questionNo}/{no}")]
     public async Task<IActionResult> Answers(int questionNo, int no)
     {
@@ -42,6 +44,8 @@ public class LatHtaukBayDinController : ControllerBase
             model.answers.FirstOrDefault(x => x.questionNo == questionNo && x.answerNo == no)
         );
     }
+
+    #endregion
 
     public class LatHtaukBayDin
     {
