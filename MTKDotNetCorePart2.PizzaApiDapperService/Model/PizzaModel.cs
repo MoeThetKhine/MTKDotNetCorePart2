@@ -1,16 +1,15 @@
-﻿namespace MTKDotNetCorePart2.PizzaApiDapperService.Model
+﻿namespace MTKDotNetCorePart2.PizzaApiDapperService.Model;
+
+[Table("Tbl_Pizza")]
+public class PizzaModel
 {
-        [Table("Tbl_Pizza")]
-        public class PizzaModel
-        {
-            [Key]
-            [Column("PizzaId")]
-            public int PizzaId { get; set; }
+    [Key]
+    [Column("PizzaId")]
+    public int PizzaId { get; set; }
 
-            [Column("Pizza")]
-            public string Pizza {  get; set; }
+    [Column("Pizza")]
+    public string Pizza {  get; set; }
 
-            [Column("Price")]
-            public decimal Price {  get; set; }
-         }
-}
+    [Column("Price")]
+    public decimal Price {  get; set; }
+ }
