@@ -50,6 +50,8 @@ public class PizzaController : ControllerBase
 
     #endregion
 
+    #region GetExtras
+
     [HttpGet("Extra")]
     public IActionResult GetExtras()
     {
@@ -58,4 +60,6 @@ public class PizzaController : ControllerBase
 
         return Ok(lst);
     }
+
+    #endregion
 }
