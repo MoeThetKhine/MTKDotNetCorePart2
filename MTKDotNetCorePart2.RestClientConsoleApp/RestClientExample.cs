@@ -1,10 +1,12 @@
 ﻿namespace MTKDotNetCorePart2.RestClientConsoleApp;
 
-internal class RestClientExample
+public class RestClientExample
 {
     private readonly RestClient _client = new RestClient(new Uri("https://localhost:7186"));
 
     private readonly string _blogEndpoint = "api/blog";
+
+    #region RunAsync
 
     public async Task RunAsync()
     {
@@ -14,6 +16,11 @@ internal class RestClientExample
        // await UpdateAsync(3, "aatitle", "aaauthor", "aacontent");
        // await DeleteAsync(5);
     }
+
+    #endregion
+
+    #region ReadAsync
+
     private async Task ReadAsync()
     {
         //RestResquest restRequest = new RestRequest(_blogEndpoint);
@@ -36,6 +43,11 @@ internal class RestClientExample
             }
         }
     }
+
+    #endregion
+
+    #region EditAsyn
+
     private async Task EditAsync(int id)
     {
         RestRequest restRequest = new RestRequest($"{_blogEndpoint}/{id}",Method.Get);
@@ -55,6 +67,10 @@ internal class RestClientExample
             Console.WriteLine(message);
         }
     }
+
+    #endregion
+
+
 
     private async Task CreateAsync(string title,string author, string content)
     {
