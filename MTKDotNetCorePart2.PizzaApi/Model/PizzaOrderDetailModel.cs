@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace MTKDotNetCorePart2.PizzaApi.Model
+﻿namespace MTKDotNetCorePart2.PizzaApi.Model
 {
     [Table("Tbl_PizzaOrderDetail")]
     public class PizzaOrderDetailModel
