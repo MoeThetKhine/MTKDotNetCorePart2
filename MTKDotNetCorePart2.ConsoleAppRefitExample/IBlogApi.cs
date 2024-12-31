@@ -1,6 +1,5 @@
 ﻿namespace MTKDotNetCorePart2.ConsoleAppRefitExample;
 
-
 #region IBlogApi
 
 public interface IBlogApi
