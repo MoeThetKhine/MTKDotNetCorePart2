@@ -97,6 +97,8 @@ public class Tbl_Mmproverbstitle
 
 #endregion
 
+#region Tbl_MmproverbsDetails
+
 public class Tbl_MmproverbsDetails
 {
     public int TitleId { get; set; }
@@ -104,6 +106,9 @@ public class Tbl_MmproverbsDetails
     public string ProverbName { get; set; }
     public string ProverbDesp { get; set; }
 }
+
+#endregion
+
 public class Tbl_MmproverbsHead
 {
     public int TitleId { get; set; }
