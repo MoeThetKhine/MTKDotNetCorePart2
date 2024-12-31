@@ -22,6 +22,8 @@ public class BlogController : ControllerBase
 
     #endregion
 
+    #region Edit
+
     [HttpGet("{id}")]
     public IActionResult Edit(int id)
     {
@@ -33,6 +35,8 @@ public class BlogController : ControllerBase
 
         return Ok(item);
     }
+
+    #endregion
 
     [HttpPost]
     public IActionResult Create(BlogModel blog)
