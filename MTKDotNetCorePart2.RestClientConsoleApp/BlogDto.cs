@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MTKDotNetCorePart2.RestClientConsoleApp
+﻿namespace MTKDotNetCorePart2.RestClientConsoleApp
 {
     public class BlogDto
     {
