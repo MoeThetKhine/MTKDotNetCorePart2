@@ -29,6 +29,8 @@ public class DA_Blog
 
     #endregion
 
+    #region GetBlogs
+
     public int CreateBlog(BlogModel requestModel)
     {
         _context.Blogs.Add(requestModel);
@@ -36,6 +38,8 @@ public class DA_Blog
 
         return result;
     }
+
+    #endregion
 
     public int UpdateBlog(int id, BlogModel requestModel)
     {
