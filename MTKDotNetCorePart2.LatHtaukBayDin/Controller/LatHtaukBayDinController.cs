@@ -47,12 +47,16 @@ public class LatHtaukBayDinController : ControllerBase
 
     #endregion
 
+    #region LatHtaukBayDin
+
     public class LatHtaukBayDin
     {
         public Question[] questions { get; set; }
         public Answer[] answers { get; set; }
         public string[] numberList { get; set; }
     }
+
+    #endregion
 
     public class Question
     {
