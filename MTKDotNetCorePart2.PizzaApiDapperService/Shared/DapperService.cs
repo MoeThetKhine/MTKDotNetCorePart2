@@ -31,7 +31,7 @@ public class DapperService
 
     #endregion
 
-
+    #region QueryFirstOrDefault
 
     public M QueryFirstOrDefault<M>(string query, object? param = null)
     {
@@ -39,6 +39,8 @@ public class DapperService
         var item = db.Query<M>(query, param).FirstOrDefault();
         return item!;
     }
+
+    #endregion
 
     public async Task<List<T>> QueryAsync<T>(
         string query,
