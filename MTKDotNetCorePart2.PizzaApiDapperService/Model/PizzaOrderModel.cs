@@ -1,5 +1,7 @@
 ﻿namespace MTKDotNetCorePart2.PizzaApiDapperService.Model;
 
+#region PizzaOrderModel
+
 [Table("Tbl_PizzaOrder")]
 public class PizzaOrderModel
 {
@@ -9,3 +11,5 @@ public class PizzaOrderModel
     public int PizzaId {  get; set; }
     public decimal TotalAmount {  get; set; }   
 }
+
+#endregion
