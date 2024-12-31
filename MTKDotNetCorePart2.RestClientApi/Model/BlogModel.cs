@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-
-namespace MTKDotNetCorePart2.RestClientApi.Model
+﻿namespace MTKDotNetCorePart2.RestClientApi.Model
 {
     [Table("Tbl_Blog")]
     public class BlogModel
