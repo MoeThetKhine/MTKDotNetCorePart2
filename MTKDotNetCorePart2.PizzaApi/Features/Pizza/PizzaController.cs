@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using MTKDotNetCorePart2.PizzaApi.Model;
-
-namespace MTKDotNetCorePart2.PizzaApi.Features.Pizza
+﻿namespace MTKDotNetCorePart2.PizzaApi.Features.Pizza
 {
     [Route("api/[controller]")]
     [ApiController]
