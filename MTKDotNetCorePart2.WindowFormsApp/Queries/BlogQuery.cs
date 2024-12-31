@@ -1,5 +1,7 @@
 ﻿namespace MTKDotNetCorePart2.WindowFormsApp.Queries;
 
+#region BlogQuery
+
 public class BlogQuery
 {
 
@@ -27,4 +29,5 @@ FROM [dbo].[Tbl_Blog]";
     #endregion
 }
 
+#endregion
 
