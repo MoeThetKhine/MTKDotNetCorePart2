@@ -12,8 +12,12 @@ public class AppDbContext : DbContext
     {
     }
 
+    #region DbSet
+
     public DbSet<PizzaModel> Pizzas { get; set; }
     public DbSet<PizzaExtraModel>PizzaExtras { get; set; }
     public DbSet<PizzaOrderDetailModel>PizzaOrderDetails { get; set; }
     public DbSet<PizzaOrderModel>PizzaOrders { get; set; }
+
+    #endregion
 }
