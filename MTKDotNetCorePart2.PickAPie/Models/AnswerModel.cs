@@ -1,5 +1,7 @@
 ﻿namespace MTKDotNetCorePart2.PickAPie.Models;
 
+#region AnswerModel
+
 public class AnswerModel
 {
     public int AnswerId { get; set; }
@@ -8,3 +10,5 @@ public class AnswerModel
     public string AnswerDesp { get; set; }
     public int QuestionId { get; set; }
 }
+
+#endregion
