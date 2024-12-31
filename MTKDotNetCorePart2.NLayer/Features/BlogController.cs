@@ -89,6 +89,8 @@ public class BlogController : ControllerBase
 
     #endregion
 
+    #region Delete
+
     [HttpDelete("{id}")]
     public IActionResult Delete(int id)
     {
@@ -103,4 +105,6 @@ public class BlogController : ControllerBase
 
         return Ok(message);
     }
+
+    #endregion
 }
