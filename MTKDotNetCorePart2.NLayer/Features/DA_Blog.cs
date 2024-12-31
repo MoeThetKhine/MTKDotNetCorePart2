@@ -86,6 +86,8 @@ public class DA_Blog
 
     #endregion
 
+    #region DeleteBlog
+
     public int DeleteBlog(int id)
     {
         var item = _context.Blogs.FirstOrDefault(x => x.BlogId == id);
@@ -96,4 +98,7 @@ public class DA_Blog
 
         return result;
     }
+
+    #endregion
+
 }
