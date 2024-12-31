@@ -62,6 +62,8 @@ public class MyanmarProverbsController : ControllerBase
 
     #endregion
 
+    #region Get
+
     [HttpGet("{titleId}/{proverbId}")]
     public async Task<IActionResult> Get(int titleId,int proverbId)
     {
@@ -70,6 +72,9 @@ public class MyanmarProverbsController : ControllerBase
 
         return Ok(item);
     }
+
+    #endregion
+
 }
 
 public class Tbl_Mmproverbs
