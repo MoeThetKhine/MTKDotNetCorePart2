@@ -41,6 +41,8 @@ public class DA_Blog
 
     #endregion
 
+    #region GetBlogs
+
     public int UpdateBlog(int id, BlogModel requestModel)
     {
         var item = _context.Blogs.FirstOrDefault(x => x.BlogId == id);
@@ -54,6 +56,8 @@ public class DA_Blog
         var result = _context.SaveChanges();
         return result;
     }
+
+    #endregion
 
     public int PatchBlog(int id, BlogModel requestModel)
     {
