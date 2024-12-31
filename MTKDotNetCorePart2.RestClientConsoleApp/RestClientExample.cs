@@ -70,7 +70,7 @@ public class RestClientExample
 
     #endregion
 
-
+    #region CreateAsync
 
     private async Task CreateAsync(string title,string author, string content)
     {
@@ -89,6 +89,8 @@ public class RestClientExample
             Console.WriteLine(message);
         }
     }
+
+    #endregion
 
     private async Task UpdateAsync(int id,string title, string author, string content)
     {
