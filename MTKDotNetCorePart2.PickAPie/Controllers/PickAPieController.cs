@@ -11,12 +11,16 @@ public class PickAPieController : ControllerBase
         return model!;
     }
 
+    #region Questions
+
     [HttpGet("questions")]
     public async Task<IActionResult> Questions()
     {
         var model = await GetDataAsync();
         return Ok(model.Questions);
     }
+
+    #endregion
 
     [HttpGet("Answer{qId}")]
     public async Task<IActionResult> Answer(int qId)
