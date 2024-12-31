@@ -4,6 +4,8 @@
 [ApiController]
 public class MyanmarProverbsController : ControllerBase
 {
+    #region GetDataFromApi
+
     private async Task<Tbl_Mmproverbs> GetDataFromApi()
     {
         //HttpClient client = new HttpClient();
@@ -20,6 +22,9 @@ public class MyanmarProverbsController : ControllerBase
         var model = JsonConvert.DeserializeObject<Tbl_Mmproverbs>(jsonStr);
         return model;
     }
+
+    #endregion
+
     [HttpGet]
     public async Task<IActionResult> Get()
     {
