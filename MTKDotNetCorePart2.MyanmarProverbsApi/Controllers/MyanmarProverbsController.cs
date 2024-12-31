@@ -109,10 +109,13 @@ public class Tbl_MmproverbsDetails
 
 #endregion
 
+#region Tbl_MmproverbsHead
+
 public class Tbl_MmproverbsHead
 {
     public int TitleId { get; set; }
     public int ProverbId { get; set; }
     public string ProverbName { get; set; }
-  
 }
+
+#endregion
