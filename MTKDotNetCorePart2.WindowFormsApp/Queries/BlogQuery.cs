@@ -2,6 +2,9 @@
 
 public class BlogQuery
 {
+
+    #region BlogCreate
+
     public static string BlogCreate { get; } = @"INSERT INTO [dbo].[Tbl_Blog]
             ([BlogTitle]
             ,[BlogAuthor]
@@ -10,6 +13,8 @@ public class BlogQuery
             (@BlogTitle
             ,@BlogAuthor
             ,@BlogContent)";
+
+    #endregion
 
     public static string BlogList { get; } = @"SELECT [BlogId]
         ,[BlogTitle]
