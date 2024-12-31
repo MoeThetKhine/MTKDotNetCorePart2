@@ -49,11 +49,15 @@ public class BL_Blog
 
     #endregion
 
+    #region PatchBlog
+
     public int PatchBlog(int id, BlogModel requestModel)
     {
         var result = _daBlog.PatchBlog(id, requestModel);
         return result;
     }
+
+    #endregion
 
     public int DeleteBlog(int id)
     {
