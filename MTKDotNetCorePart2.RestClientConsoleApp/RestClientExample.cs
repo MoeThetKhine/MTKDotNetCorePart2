@@ -115,6 +115,8 @@ public class RestClientExample
 
     #endregion
 
+    #region DeleteAsync
+
     private async Task DeleteAsync(int id)
     {
         RestRequest restRequest= new RestRequest($"{_blogEndpoint}/{id}", Method.Delete);
@@ -131,4 +133,7 @@ public class RestClientExample
             Console.WriteLine(message);
         }
     }
+
+    #endregion
+
 }
