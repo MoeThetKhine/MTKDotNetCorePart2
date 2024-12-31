@@ -1,5 +1,7 @@
 ﻿namespace MTKDotNetCorePart2.PizzaApiDapperService.Query;
 
+#region PizzaQuery
+
 public class PizzaQuery
 {
 
@@ -22,3 +24,5 @@ public class PizzaQuery
     #endregion
 
 }
+
+#endregion
