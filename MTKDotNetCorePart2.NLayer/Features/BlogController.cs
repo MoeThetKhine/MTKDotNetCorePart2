@@ -51,6 +51,8 @@ public class BlogController : ControllerBase
 
     #endregion
 
+    #region Update
+
     [HttpPut("{id}")]
     public IActionResult Update(int id, BlogModel blog)
     {
@@ -66,6 +68,10 @@ public class BlogController : ControllerBase
         return Ok(message);
     }
 
+    #endregion
+
+    #region Patch
+
     [HttpPatch("{id}")]
     public IActionResult Patch(int id, BlogModel blog)
     {
@@ -80,6 +86,8 @@ public class BlogController : ControllerBase
 
         return Ok(message);
     }
+
+    #endregion
 
     [HttpDelete("{id}")]
     public IActionResult Delete(int id)
