@@ -1,7 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using MTKDotNetCorePart2.HttpClientApi.Model;
-
-namespace MTKDotNetCorePart2.HttpClientApi.Database;
+﻿namespace MTKDotNetCorePart2.HttpClientApi.Database;
 
 public class AppDbContext : DbContext
 {
