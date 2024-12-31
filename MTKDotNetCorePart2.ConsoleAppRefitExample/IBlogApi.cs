@@ -1,38 +1,36 @@
-﻿namespace MTKDotNetCorePart2.ConsoleAppRefitExample
+﻿namespace MTKDotNetCorePart2.ConsoleAppRefitExample;
+
+
+#region IBlogApi
+
+public interface IBlogApi
 {
+    [Get("/api/blog")]
+    Task<List<BlogModel>> GetBlogs();
 
-    #region IBlogApi
+    [Get("/api/blog/{id}")]
+    Task<BlogModel> GetBlog(int id);
 
-    public interface IBlogApi
-    {
-        [Get("/api/blog")]
-        Task<List<BlogModel>> GetBlogs();
+    [Post("/api/blog")]
+    Task<string> CreateBlog(BlogModel blog);
 
-        [Get("/api/blog/{id}")]
-        Task<BlogModel> GetBlog(int id);
+    [Put("/api/blog/{id}")]
+    Task<string> UpdateBlog(int id, BlogModel blog);
 
-        [Post("/api/blog")]
-        Task<string> CreateBlog(BlogModel blog);
-
-        [Put("/api/blog/{id}")]
-        Task<string> UpdateBlog(int id, BlogModel blog);
-
-        [Delete("/api/blog/{id}")]
-        Task<string> DeleteBlog(int id);
-    }
-
-    #endregion
-
-    #region BlogModel
-
-    public class BlogModel
-    {
-        public int BlogId { get; set; }
-        public string? BlogTitle { get; set; }
-        public string? BlogAuthor { get; set; }
-        public string? BlogContent { get; set; }
-    }
-
-    #endregion
-
+    [Delete("/api/blog/{id}")]
+    Task<string> DeleteBlog(int id);
 }
+
+#endregion
+
+#region BlogModel
+
+public class BlogModel
+{
+    public int BlogId { get; set; }
+    public string? BlogTitle { get; set; }
+    public string? BlogAuthor { get; set; }
+    public string? BlogContent { get; set; }
+}
+
+#endregion
