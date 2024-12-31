@@ -25,12 +25,17 @@ namespace MTKDotNetCorePart2.PizzaApi.Features.Pizza
 
         #endregion
 
+        #region GetExtraAsync
+
         [HttpGet("Extras")]
         public async Task<IActionResult> GetExtraAsync()
         {
             var lst = await _appDbContext.PizzaExtras.ToListAsync();
             return Ok(lst);
         }
+
+        #endregion
+
         [HttpGet("Order/{invoiceNo}")]
         public async Task<IActionResult> GetOrder(string invoiceNo)
         {
