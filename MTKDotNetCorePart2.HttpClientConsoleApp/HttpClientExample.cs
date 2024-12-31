@@ -67,6 +67,8 @@ public class HttpClientExample
 
     #endregion
 
+    #region DeleteAsync
+
     private async Task DeleteAsync(int id)
     {
         var response = await _client.DeleteAsync($"{_blogEndpoint}/{id}");
@@ -81,6 +83,9 @@ public class HttpClientExample
             Console.WriteLine(message);
         }
     }
+
+    #endregion
+
     private async Task CreateAsync(string title, string author, string content)
     {
         BlogDto blogDto = new BlogDto()
