@@ -1,7 +1,4 @@
-﻿using Newtonsoft.Json;
-using RestSharp;
-
-namespace MTKDotNetCorePart2.RestClientConsoleApp
+﻿namespace MTKDotNetCorePart2.RestClientConsoleApp
 {
     internal class RestClientExample
     {
