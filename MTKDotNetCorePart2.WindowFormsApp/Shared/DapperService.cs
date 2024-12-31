@@ -59,6 +59,8 @@ public class DapperService
 
     #endregion
 
+    #region QueryFirstOrDefaultAsync
+
     public async Task<T> QueryFirstOrDefaultAsync<T>(
         string query,
         object? parameters = null,
@@ -73,6 +75,7 @@ public class DapperService
         );
         return item!;
     }
+    #endregion
 
     public async Task<int> ExecuteAsync(string query, object parameters)
     {
