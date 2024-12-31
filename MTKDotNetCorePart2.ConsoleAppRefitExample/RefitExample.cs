@@ -1,11 +1,4 @@
-﻿using MTKDotNetCorePart2.NLayer.Features;
-using MTKDotNetCorePart2.NLayer.Model;
-using Refit;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Refit;
 
 namespace MTKDotNetCorePart2.ConsoleAppRefitExample
 {
