@@ -33,6 +33,8 @@ public class PizzaController : ControllerBase
 
     #endregion
 
+    #region GetOrder
+
     [HttpGet("Order/{invoiceNo}")]
     public async Task<IActionResult> GetOrder(string invoiceNo)
     {
@@ -43,8 +45,9 @@ public class PizzaController : ControllerBase
             Order = item,   
             OrderDetail = lst
         });
-
     }
+
+    #endregion
 
     [HttpPost("Order")]
     public async Task<IActionResult> OrderAsync(OrderResquestModel orderRequest)
