@@ -87,11 +87,15 @@ public class Tbl_Mmproverbs
 
 #endregion
 
+#region Tbl_Mmproverbstitle
+
 public class Tbl_Mmproverbstitle
 {
     public int TitleId { get; set; }
     public string TitleName { get; set; }
 }
+
+#endregion
 
 public class Tbl_MmproverbsDetails
 {
