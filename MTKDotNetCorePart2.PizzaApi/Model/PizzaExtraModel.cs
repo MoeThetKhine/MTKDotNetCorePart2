@@ -1,5 +1,7 @@
 ﻿namespace MTKDotNetCorePart2.PizzaApi.Model;
 
+#region PizzaExtraModel
+
 [Table("Tbl_PizzaExtra")]
 public class PizzaExtraModel
 {
@@ -16,3 +18,5 @@ public class PizzaExtraModel
     [NotMapped]
     public string PriceStr { get { return "$" + Price; } }
 }
+
+#endregion
