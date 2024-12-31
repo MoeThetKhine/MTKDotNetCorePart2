@@ -23,12 +23,16 @@ public class LatHtaukBayDinController : ControllerBase
 
     #endregion
 
+    #region NumberList
+
     [HttpGet("number-list")]
     public async Task<IActionResult> NumberList()
     {
         var model = await GetDataAsync();
         return Ok(model.numberList);
     }
+
+    #endregion
 
     [HttpGet("{questionNo}/{no}")]
     public async Task<IActionResult> Answers(int questionNo, int no)
