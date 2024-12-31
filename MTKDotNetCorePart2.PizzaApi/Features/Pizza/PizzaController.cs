@@ -1,9 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using MTKDotNetCorePart2.PizzaApi.Database;
+﻿using Microsoft.AspNetCore.Mvc;
 using MTKDotNetCorePart2.PizzaApi.Model;
-using System.Linq;
 
 namespace MTKDotNetCorePart2.PizzaApi.Features.Pizza
 {
