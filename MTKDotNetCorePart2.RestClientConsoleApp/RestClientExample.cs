@@ -92,6 +92,8 @@ public class RestClientExample
 
     #endregion
 
+    #region UpdateAsync
+
     private async Task UpdateAsync(int id,string title, string author, string content)
     {
         BlogDto blogDto = new BlogDto()
@@ -110,6 +112,8 @@ public class RestClientExample
             Console.WriteLine(message);
         }
     }
+
+    #endregion
 
     private async Task DeleteAsync(int id)
     {
