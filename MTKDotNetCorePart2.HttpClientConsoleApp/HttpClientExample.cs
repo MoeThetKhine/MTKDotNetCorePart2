@@ -21,6 +21,7 @@ public class HttpClientExample
 
     #endregion
 
+    #region ReadAsync
 
     private async Task ReadAsync()
     {
@@ -39,6 +40,10 @@ public class HttpClientExample
             }
         }
     }
+
+    #endregion
+
+
     private async Task EditAsync(int id)
     {
         var response = await _client.GetAsync($"{_blogEndpoint}/{id}");
