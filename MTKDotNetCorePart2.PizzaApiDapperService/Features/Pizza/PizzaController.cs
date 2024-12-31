@@ -9,8 +9,9 @@ public class PizzaController : ControllerBase
     public PizzaController()
     {
         _dapperService = new DapperService(ConnectionStrings._sqlConnectionStringBuilder.ConnectionString);
-
     }
+
+    #region GetOrder
 
     [HttpGet("Order/{invoiceNo}")]
     public IActionResult GetOrder(string invoiceNo)
@@ -33,6 +34,8 @@ public class PizzaController : ControllerBase
         };
         return Ok(model);
     }
+
+    #endregion
 
     [HttpGet]
     public IActionResult GetPizza()
