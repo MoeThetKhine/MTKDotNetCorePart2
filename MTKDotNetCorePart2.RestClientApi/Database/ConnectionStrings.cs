@@ -1,5 +1,7 @@
 ﻿namespace MTKDotNetCorePart2.RestClientApi.Database;
 
+#region ConnectionStrings
+
 public class ConnectionStrings
 {
     public static SqlConnectionStringBuilder _sqlConnectionStringBuilder = new SqlConnectionStringBuilder()
@@ -10,3 +12,5 @@ public class ConnectionStrings
         TrustServerCertificate = true,
     };
 }
+
+#endregion
