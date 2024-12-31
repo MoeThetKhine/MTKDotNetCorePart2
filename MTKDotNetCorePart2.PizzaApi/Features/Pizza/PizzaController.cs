@@ -13,12 +13,17 @@ namespace MTKDotNetCorePart2.PizzaApi.Features.Pizza
         {
             _appDbContext = appDbContext;
         }
+
+        #region GetAsync
+
         [HttpGet]
         public async Task<IActionResult> GetAsync()
         {
             var lst = await _appDbContext.Pizzas.ToListAsync();
             return Ok(lst);
         }
+
+        #endregion
 
         [HttpGet("Extras")]
         public async Task<IActionResult> GetExtraAsync()
