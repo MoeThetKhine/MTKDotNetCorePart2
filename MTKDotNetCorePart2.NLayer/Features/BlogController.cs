@@ -38,6 +38,8 @@ public class BlogController : ControllerBase
 
     #endregion
 
+    #region Create
+
     [HttpPost]
     public IActionResult Create(BlogModel blog)
     {
@@ -46,6 +48,8 @@ public class BlogController : ControllerBase
 
         return Ok(message);
     }
+
+    #endregion
 
     [HttpPut("{id}")]
     public IActionResult Update(int id, BlogModel blog)
