@@ -6,8 +6,14 @@ public class AppDbContext : DbContext
     {
         optionsBuilder.UseSqlServer(ConnectionStrings._sqlConnectionStringBuilder.ConnectionString);
     }
+
+    #region DbSet
+
     public DbSet<PizzaModel> Pizzas { get; set; }
     public DbSet<PizzaExtraModel> PizzaExtras { get; set; }
     public DbSet<PizzaOrderDetailModel> PizzaOrderDetails { get; set; }
     public DbSet<PizzaOrderModel> PizzaOrders { get; set; }
+
+    #endregion
+
 }
