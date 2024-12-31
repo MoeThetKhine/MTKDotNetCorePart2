@@ -22,6 +22,8 @@ public class PickAPieController : ControllerBase
 
     #endregion
 
+    #region Answer
+
     [HttpGet("Answer{qId}")]
     public async Task<IActionResult> Answer(int qId)
     {
@@ -30,6 +32,8 @@ public class PickAPieController : ControllerBase
 
         return Ok(answers);
     }
+
+    #endregion
 
     [HttpGet("{answerName}/{questionId}")]
     public async Task<IActionResult> Answers(string answerName, int questionId)
