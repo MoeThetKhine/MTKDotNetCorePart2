@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-
-namespace MTKDotNetCorePart2.LatHtaukBayDin.Controller;
+﻿namespace MTKDotNetCorePart2.LatHtaukBayDin.Controller;
 
 [Route("api/[controller]")]
 [ApiController]
