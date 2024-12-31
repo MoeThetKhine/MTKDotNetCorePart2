@@ -1,6 +1,3 @@
-using Microsoft.EntityFrameworkCore;
-using MTKDotNetCorePart2.PizzaApi.Database;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
