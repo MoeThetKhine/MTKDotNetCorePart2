@@ -1,6 +1,4 @@
-﻿using Refit;
-
-namespace MTKDotNetCorePart2.ConsoleAppRefitExample
+﻿namespace MTKDotNetCorePart2.ConsoleAppRefitExample
 {
 
     #region IBlogApi
