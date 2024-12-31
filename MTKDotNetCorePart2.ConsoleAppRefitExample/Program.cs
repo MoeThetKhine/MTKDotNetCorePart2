@@ -1,7 +1,4 @@
-﻿using Refit;
-using MTKDotNetCorePart2.ConsoleAppRefitExample;
-
-try
+﻿try
 {
     RefitExample refitExample = new RefitExample();
     await refitExample.RunAsync();
