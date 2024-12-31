@@ -1,10 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using MySqlX.XDevAPI.Common;
-using Newtonsoft.Json;
-using System.Text.Json.Serialization;
-
-namespace MTKDotNetCorePart2.MyanmarProverbsApi.Controllers
+﻿namespace MTKDotNetCorePart2.MyanmarProverbsApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
