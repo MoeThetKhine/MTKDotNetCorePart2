@@ -5,3 +5,4 @@ global using System.ComponentModel.DataAnnotations.Schema;
 global using System.ComponentModel.DataAnnotations;
 global using MTKDotNetCorePart2.NLayer.Database;
 global using Microsoft.AspNetCore.Mvc;
+global using MTKDotNetCorePart2.NLayer.Features;

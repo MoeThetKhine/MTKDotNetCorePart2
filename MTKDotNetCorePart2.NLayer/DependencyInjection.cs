@@ -1,6 +1,4 @@
-﻿using MTKDotNetCorePart2.NLayer.Features;
-
-namespace MTKDotNetCorePart2.NLayer;
+﻿namespace MTKDotNetCorePart2.NLayer;
 
 public static class DependencyInjection
 {
