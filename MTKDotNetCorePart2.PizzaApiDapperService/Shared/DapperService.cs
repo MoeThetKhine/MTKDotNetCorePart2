@@ -1,8 +1,4 @@
-﻿using System.Data;
-using System.Data.SqlClient;
-using Dapper;
-
-namespace MTKDotNetCorePart2.PizzaApiDapperService.Shared;
+﻿namespace MTKDotNetCorePart2.PizzaApiDapperService.Shared;
 
 public class DapperService
 {
