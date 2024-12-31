@@ -8,3 +8,4 @@ global using MTKDotNetCorePart2.PizzaApiDapperService.Database;
 global using MTKDotNetCorePart2.PizzaApiDapperService.Model;
 global using MTKDotNetCorePart2.PizzaApiDapperService.Query;
 global using MTKDotNetCorePart2.PizzaApiDapperService.Shared;
+global using Microsoft.EntityFrameworkCore;

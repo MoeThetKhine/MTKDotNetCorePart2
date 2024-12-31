@@ -1,7 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using MTKDotNetCorePart2.PizzaApiDapperService.Model;
-
-namespace MTKDotNetCorePart2.PizzaApiDapperService.Database
+﻿namespace MTKDotNetCorePart2.PizzaApiDapperService.Database
 {
     public class AppDbContext : DbContext
     {
