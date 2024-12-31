@@ -1,9 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using MTKDotNetCorePart2.RestClientApi.Database;
-using MTKDotNetCorePart2.RestClientApi.Model;
-
-namespace MTKDotNetCorePart2.RestClientApi.Controllers
+﻿namespace MTKDotNetCorePart2.RestClientApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
