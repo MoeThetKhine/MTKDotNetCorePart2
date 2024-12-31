@@ -1,12 +1,14 @@
 ﻿namespace MTKDotNetCorePart2.HttpClientConsoleApp;
 
-internal class HttpClientExample
+public class HttpClientExample
 {
     private readonly HttpClient _client = new HttpClient()
     {
         BaseAddress = new Uri("https://localhost:7013")
     };
     private readonly string _blogEndpoint = "api/blog";
+
+    #region RunAsync
 
     public async Task RunAsync()
     {
@@ -16,6 +18,10 @@ internal class HttpClientExample
         //await UpdateAsync(2, "updatetitle", "updateauthor", "updatecontent");
         //await DeleteAsync(3);
     }
+
+    #endregion
+
+
     private async Task ReadAsync()
     {
         var response = await _client.GetAsync(_blogEndpoint);
