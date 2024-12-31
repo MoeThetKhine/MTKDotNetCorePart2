@@ -1,5 +1,7 @@
 ﻿namespace MTKDotNetCorePart2.WindowFormsApp;
 
+#region ConnectionStrings
+
 public class ConnectionStrings
 {
     public static SqlConnectionStringBuilder _sqlConnectionStringBuilder =
@@ -11,3 +13,5 @@ public class ConnectionStrings
             TrustServerCertificate = true,
         };
 }
+
+#endregion
