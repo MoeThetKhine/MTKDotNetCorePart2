@@ -12,12 +12,16 @@ public class LatHtaukBayDinController : ControllerBase
         return model!;
     }
 
+    #region Questions
+
     [HttpGet("questions")]
     public async Task<IActionResult> Questions()
     {
         var model = await GetDataAsync();
         return Ok(model.questions);
     }
+
+    #endregion
 
     [HttpGet("number-list")]
     public async Task<IActionResult> NumberList()
