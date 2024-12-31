@@ -58,11 +58,15 @@ public class LatHtaukBayDinController : ControllerBase
 
     #endregion
 
+    #region Question
+
     public class Question
     {
         public int questionNo { get; set; }
         public string questionName { get; set; }
     }
+
+    #endregion
 
     public class Answer
     {
