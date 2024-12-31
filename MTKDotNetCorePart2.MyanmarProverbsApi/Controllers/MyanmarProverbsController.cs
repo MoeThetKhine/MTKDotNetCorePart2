@@ -77,11 +77,15 @@ public class MyanmarProverbsController : ControllerBase
 
 }
 
+#region Tbl_Mmproverbs
+
 public class Tbl_Mmproverbs
 {
     public Tbl_Mmproverbstitle[] Tbl_MMProverbsTitle { get; set; }
     public Tbl_MmproverbsDetails[] Tbl_MMProverbs { get; set; }
 }
+
+#endregion
 
 public class Tbl_Mmproverbstitle
 {
